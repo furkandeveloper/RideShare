@@ -27,8 +27,4 @@
     <PackageReference Include="Applyze.Exceptions.AspNetCore" Version="1.3.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dtos\Request\" />
-  </ItemGroup>
-
 </Project>
