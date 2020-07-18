@@ -13,7 +13,7 @@ namespace RideShare.Web.Services.Abstractions
     {
         Task<UserResponseDto> RegisterUserAsync([NotNull]UserRequestDto dto);
 
-        Task<UserResponseDto> GetUserInformation([NotNull] string userId);
+        Task<UserResponseDto> GetUserInformationAsync([NotNull] string userId);
 
         Task DeleteUserAsync([NotNull] string userId);
 

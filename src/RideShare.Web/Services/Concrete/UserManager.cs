@@ -45,7 +45,7 @@ namespace RideShare.Web.Services.Concrete
             await userRepository.DeleteAsync(user);
         }
 
-        public async Task<UserResponseDto> GetUserInformation([NotNull] string userId)
+        public async Task<UserResponseDto> GetUserInformationAsync([NotNull] string userId)
         {
             var user = await FindUserAsync(userId);
             var mapped = mapper.Map<UserResponseDto>(user);
