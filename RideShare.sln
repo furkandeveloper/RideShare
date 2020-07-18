@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FE614647-A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RideShare.Web", "src\RideShare.Web\RideShare.Web.csproj", "{7CC7F190-FD3F-4302-8E60-CE6CC0562AC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RideShare.UnitTest", "test\RideShare.UnitTest\RideShare.UnitTest.csproj", "{90841653-D5AF-4462-9C14-25C271827A79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{7CC7F190-FD3F-4302-8E60-CE6CC0562AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CC7F190-FD3F-4302-8E60-CE6CC0562AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CC7F190-FD3F-4302-8E60-CE6CC0562AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90841653-D5AF-4462-9C14-25C271827A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90841653-D5AF-4462-9C14-25C271827A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90841653-D5AF-4462-9C14-25C271827A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90841653-D5AF-4462-9C14-25C271827A79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7CC7F190-FD3F-4302-8E60-CE6CC0562AC2} = {5538F169-709B-4873-BA5A-1C0453CFDE0B}
+		{90841653-D5AF-4462-9C14-25C271827A79} = {FE614647-A1D5-4A75-89AD-BFDA26DBC0D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D0B04575-61B0-42C9-837B-BAA5FC326025}
