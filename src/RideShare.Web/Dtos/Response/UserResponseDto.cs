@@ -7,6 +7,7 @@ namespace RideShare.Web.Dtos.Response
 {
     public class UserResponseDto
     {
+        public string Id { get; set; }
         public string Name { get; set; }
 
         public string Surname { get; set; }
