@@ -9,7 +9,7 @@ namespace RideShare.Web.Validations
 {
     public class UserValidator : AbstractValidator<UserRequestDto>
     {
-        public const string regex = @"^[2-9]\d{2}-\d{3}-\d{4}$";
+        public const string regex = "^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\\s\\./0-9]*$";
         public UserValidator()
         {
             RuleFor(r => r.Name).NotEmpty().NotNull();

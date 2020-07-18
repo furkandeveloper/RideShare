@@ -80,7 +80,7 @@ namespace RideShare.Web.Controllers.v1
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        [HttpPut("user/{userId}", Name = "ActiveUser")]
+        [HttpPut("user/{userId}/active", Name = "ActiveUser")]
         [ProducesResponseType(204)]
         [ModelStateFilter]
         public async Task<IActionResult> ActiveUserAsync(string userId)
@@ -94,7 +94,7 @@ namespace RideShare.Web.Controllers.v1
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        [HttpPut("user/{userId}", Name = "PassiveUser")]
+        [HttpPut("user/{userId}/passive", Name = "PassiveUser")]
         [ProducesResponseType(204)]
         [ModelStateFilter]
         public async Task<IActionResult> PassiveUserAsync(string userId)

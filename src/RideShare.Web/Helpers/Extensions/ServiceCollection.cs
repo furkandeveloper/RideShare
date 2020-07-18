@@ -22,12 +22,14 @@ namespace RideShare.Web.Helpers.Extensions
         {
             services.AddScoped<IRideShareContext, RideShareContext>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITravelRepository, TravelRepository>();
             return services;
         }
 
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             services.AddScoped<IUserService, UserManager>();
+            services.AddScoped<ITravelService, TravelManager>();
             return services;
         }
     }

@@ -34,6 +34,9 @@ namespace RideShare.Web.Context.Concrete
         public IMongoCollection<User> Users
             => Database.GetCollection<User>(nameof(Users));
 
+        public IMongoCollection<Travel> Travels
+            => Database.GetCollection<Travel>(nameof(Travels));
+
         public IMongoCollection<T> Set<T>(string collection = null)
         {
             return Database.GetCollection<T>(collection ?? typeof(T).Name);
