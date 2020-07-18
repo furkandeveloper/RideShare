@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RideShare.Web</name>
+    </assembly>
+    <members>
+        <member name="P:RideShare.Web.Context.Concrete.RideShareContext.Database">
+            <summary>
+            Root of Database object
+            </summary>
+        </member>
+        <member name="M:RideShare.Web.Controllers.BaseController.BadRequest(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RideShare.Web.Controllers.BaseController.BadRequest(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RideShare.Web.Controllers.BaseController.BadRequest(System.Object,System.String)">
+            <summary>
+            Returns badrequest with key.
+            </summary>
+            <param name="data">Data to return.</param>
+            <param name="key">Key to response.</param>
+            <returns>BadRequestObjectResult.</returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.BaseController.NotFound(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RideShare.Web.Controllers.BaseController.Accepted(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RideShare.Web.Controllers.BaseController.Accepted(System.Uri,System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RideShare.Web.Controllers.BaseController.Ok(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="T:RideShare.Web.Controllers.BaseController.ProducesResponseTypeAttribute">
+            <summary>
+            This class converts given type to generic <see cref="T:RideShare.Web.Dtos.Response.ApiResult`1"/>.
+            </summary>
+        </member>
+        <member name="M:RideShare.Web.Controllers.BaseController.ProducesResponseTypeAttribute.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RideShare.Web.Controllers.BaseController.ProducesResponseTypeAttribute"/> class.
+            </summary>
+            <param name="statusCode">Http Status Code to return.</param>
+        </member>
+        <member name="M:RideShare.Web.Controllers.BaseController.ProducesResponseTypeAttribute.#ctor(System.Type,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RideShare.Web.Controllers.BaseController.ProducesResponseTypeAttribute"/> class.
+            </summary>
+            <param name="type">Type of response. (without <see cref="T:RideShare.Web.Dtos.Response.ApiResult`1"/>.)</param>
+            <param name="statusCode">Http Status Code to return.</param>
+        </member>
+        <member name="M:RideShare.Web.Controllers.BaseController.ProducesResponseTypeAttribute.#ctor(System.Type,System.Type,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RideShare.Web.Controllers.BaseController.ProducesResponseTypeAttribute"/> class.
+            </summary>
+            <param name="type">Type of response. (without <see cref="T:RideShare.Web.Dtos.Response.ApiResult`1"/>.)</param>
+            <param name="statusCode">Http Status Code to return.</param>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.AccountController.GetUserInformationAsync(System.String)">
+            <summary>
+            Get user information
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.AccountController.RegisterUserAsync(RideShare.Web.Dtos.Request.UserRequestDto)">
+            <summary>
+            Register User
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.AccountController.UpdateUserAsync(System.String,RideShare.Web.Dtos.Request.UserUpdateRequestDto)">
+            <summary>
+            Update User information
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.AccountController.DeleteUserAsync(System.String)">
+            <summary>
+            Delete User
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.AccountController.ActiveUserAsync(System.String)">
+            <summary>
+            Active User
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.AccountController.PassiveUserAsync(System.String)">
+            <summary>
+            Passive User
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.TravelController.TravelFilterAsync(RideShare.Web.Dtos.Request.TravelFilterDto)">
+            <summary>
+            Filter Travels
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.TravelController.InsertTravelAsync(RideShare.Web.Dtos.Request.TravelRequestDto)">
+            <summary>
+            Insert Travel
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.TravelController.UpdateTravelAsync(System.String,RideShare.Web.Dtos.Request.TravelUpdateRequestDto)">
+            <summary>
+            Update travel
+            </summary>
+            <param name="travelId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.TravelController.ActiveTravelAsync(System.String)">
+            <summary>
+            Active Travel
+            </summary>
+            <param name="travelId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.TravelController.PassiveTravelAsync(System.String)">
+            <summary>
+            Passive Travel
+            </summary>
+            <param name="travelId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.TravelController.DeleteTravelAsync(System.String)">
+            <summary>
+            Delete Travel
+            </summary>
+            <param name="travelId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.TravelController.IncludeTravelAsync(System.String,System.String)">
+            <summary>
+            Incude user of travel
+            </summary>
+            <param name="travelId"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RideShare.Web.Controllers.v1.TravelController.LeaveTravelAsync(System.String,System.String)">
+            <summary>
+            Leave user of travel
+            </summary>
+            <param name="travelId"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:RideShare.Web.Dtos.Response.ApiResult`2">
+            <summary>
+            This is base class of Api Response models. All requests will return in this template. See BaseController for implementation.
+            </summary>
+            <typeparam name="T">Type of data.</typeparam>
+        </member>
+        <member name="P:RideShare.Web.Dtos.Response.ApiResult`2.Success">
+            <summary>
+            Indicates if request completed successful or not.
+            </summary>
+        </member>
+        <member name="P:RideShare.Web.Dtos.Response.ApiResult`2.Key">
+            <summary>
+            Key of message or request type.
+            </summary>
+        </member>
+        <member name="P:RideShare.Web.Dtos.Response.ApiResult`2.Data">
+            <summary>
+            Main data of response.
+            </summary>
+        </member>
+        <member name="P:RideShare.Web.Dtos.Response.ApiResult`2.Meta">
+            <summary>
+            Metadata about response, like pagination page counts or depricated elements etc.
+            </summary>
+        </member>
+        <member name="P:RideShare.Web.Dtos.Response.ApiResult`2.Message">
+            <summary>
+            Message about request. Some unseuccessful requests have message about it.
+            </summary>
+        </member>
+        <member name="P:RideShare.Web.Dtos.Response.ApiResult`2.IsUserFriendlyMessage">
+            <summary>
+            Indicates if <see cref="P:RideShare.Web.Dtos.Response.ApiResult`2.Message"/> comes from resources and readable by directly users or not.
+            </summary>
+        </member>
+        <member name="T:RideShare.Web.Dtos.Response.ApiResult`1">
+            <summary>
+            This is base class of Api Response models. All requests will return in this template. See BaseController for implementation.
+            </summary>
+            <typeparam name="T">Type of data.</typeparam>
+        </member>
+        <member name="T:RideShare.Web.Helpers.Extensions.ServiceCollection">
+            <summary>
+            Service collection extension method
+            </summary>
+        </member>
+        <member name="T:RideShare.Web.Helpers.Filters.ModelStateFilterAttribute">
+            <summary>
+            This Filter checks ModelState.IsValid and returns BadRequest(ModelState) if it's not valid and controller action won't we invoked.
+            </summary>
+        </member>
+    </members>
+</doc>
