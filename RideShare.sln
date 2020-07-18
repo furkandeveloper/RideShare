@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5538F169-709
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FE614647-A1D5-4A75-89AD-BFDA26DBC0D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RideShare.Web", "src\RideShare.Web\RideShare.Web.csproj", "{7CC7F190-FD3F-4302-8E60-CE6CC0562AC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RideShare.Web", "src\RideShare.Web\RideShare.Web.csproj", "{7CC7F190-FD3F-4302-8E60-CE6CC0562AC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
