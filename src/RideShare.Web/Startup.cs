@@ -29,6 +29,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 using RideShare.Web.Helpers.Documentation;
+using RideShare.Web.Helpers.Extensions;
 using RideShare.Web.Models;
 
 namespace RideShare.Web
@@ -190,6 +191,8 @@ namespace RideShare.Web
             services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
             services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
             #endregion
+
+            services.AddRepositories();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
