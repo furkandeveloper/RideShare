@@ -18,12 +18,14 @@ namespace RideShare.Web.Services.Concrete
         private readonly IMapper mapper;
         private readonly IUserRepository userRepository;
         private readonly IConfiguration configuration;
+        private readonly ITravelRepository travelRepository;
 
-        public UserManager(IMapper mapper,IUserRepository userRepository,IConfiguration configuration)
+        public UserManager(IMapper mapper,IUserRepository userRepository,IConfiguration configuration,ITravelRepository travelRepository)
         {
             this.mapper = mapper;
             this.userRepository = userRepository;
             this.configuration = configuration;
+            this.travelRepository = travelRepository;
         }
 
         private async Task<User> FindUserAsync([NotNull]string userId, bool isActive = true)
@@ -42,6 +44,7 @@ namespace RideShare.Web.Services.Concrete
         public async Task DeleteUserAsync([NotNull] string userId)
         {
             var user = await FindUserAsync(userId);
+            await travelRepository.DeleteUserOfTravelAsync(userId);
             await userRepository.DeleteAsync(user);
         }
 
