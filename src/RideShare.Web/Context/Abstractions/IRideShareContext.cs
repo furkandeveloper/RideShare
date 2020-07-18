@@ -9,6 +9,7 @@ namespace RideShare.Web.Context.Abstractions
 {
     public interface IRideShareContext
     {
+        IMongoCollection<Travel> Travels { get; }
         IMongoCollection<User> Users { get; }
 
         IMongoCollection<T> Set<T>(string collection = null);
