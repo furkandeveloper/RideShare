@@ -4,6 +4,8 @@ using RideShare.Web.Context.Abstractions;
 using RideShare.Web.Context.Concrete;
 using RideShare.Web.Repositories.Abstractions;
 using RideShare.Web.Repositories.Concrete;
+using RideShare.Web.Services.Abstractions;
+using RideShare.Web.Services.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +22,12 @@ namespace RideShare.Web.Helpers.Extensions
         {
             services.AddScoped<IRideShareContext, RideShareContext>();
             services.AddScoped<IUserRepository, UserRepository>();
+            return services;
+        }
+
+        public static IServiceCollection AddServices(this IServiceCollection services)
+        {
+            services.AddScoped<IUserService, UserManager>();
             return services;
         }
     }
